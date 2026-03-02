@@ -4,5 +4,5 @@ PyQt5
 cloudscraper
 requests
 aiohttp
-httpx2
+httpx
 asyncio
